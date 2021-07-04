@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="/th/" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="file"> Upload a file</label>
+        <input type="file" id="file" name="file"><br><br>
+        <small>Only accepts CSV files</small>
+        <button type="submit">Upload</button>
+    </form>
+    {% for profile in profiles %}
+    {{profile.Name}}
+    {% endfor %}
+</body>
+</html>
