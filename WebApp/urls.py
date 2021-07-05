@@ -7,5 +7,6 @@ urlpatterns = [
     #path('',views.file),
     path('th/',views.thanks),
     path('upload/',views.simple_upload),
+    path('wish/',views.wish),
 
 ]

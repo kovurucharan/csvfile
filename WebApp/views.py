@@ -3,10 +3,13 @@ from django.shortcuts import render
 # Create your views here.
 import csv, io
 from django.shortcuts import render
+from django.http import HttpResponse
 from django.contrib import messages
 from WebApp.models import Uploadfile
 from django.core.files.storage import FileSystemStorage
 
+def wish(request):
+    return  HttpResponse("Welcome to csv files")
 
 # def file(request):
 #     data=Uploadfile.objects.all()
