@@ -9,7 +9,7 @@ from WebApp.models import Uploadfile
 from django.core.files.storage import FileSystemStorage
 
 def wish(request):
-    return  HttpResponse("Welcome to csv files")
+    return  HttpResponse("Welcome to csv files world")
 
 # def file(request):
 #     data=Uploadfile.objects.all()
